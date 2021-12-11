@@ -7,17 +7,57 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-}
-body{
-   /* font-family:'PT Sans Narrow', sans-serif;*/
-    /*font-family:'Bebas Neue', cursive;*/
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-image: url(img/fondo.jpg);
+}
+
+body{
+    background-image: url(img/fondo-cc.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
 }
+
+#audio{
+    align-content: center;
+}
+
+#show{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+dialog{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    opacity: 85%;
+
+}
+
+#logo-terra{
+    width: 50px;
+    height: 50px;
+    animation-name: animacion;
+    animation-duration: 4s;
+    position: relative;
+    animation-timing-function: steps(100, start);
+}
+
+@keyframes animacion {
+    0%   {left: 0; top: 0px; }
+    25%  {left: 200px; top: 0px;}
+    50%  {left: 200px; top: 200px;}
+    75%  {left:0px; top:200px;}
+    100% {left: 0px; top: 0px;}
+}
+
+
 header{
     width: 100%; 
                                                      /*NAV*/
@@ -92,12 +132,11 @@ nav{
                                                     /*BODY*/
 .content{
     padding: 0 30px;
-    margin-top: 150px;
+    margin-top: 85px;
     text-align: center;
     width: 100%;
     height: 53.8vh;
-    color:black;
-    /*opacity: 0.9;*/
+    color: black;
 }
 .content h1{
     font-size: 50px;
@@ -111,7 +150,6 @@ nav{
     background-color: black;
     color: white;
     border-radius: 15px;
-    /*opacity: 0.9;*/
 }
 .body-btn a:hover{
     color: yellow;
@@ -125,6 +163,7 @@ footer{
     align-items: center;
 }
 .RRSS{
+    color: #fff;
     text-align: center;
     text-decoration: none;
     padding: 5px 15px;
