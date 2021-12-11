@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SevillaParty</title>
+    <title>DISCO TERRA</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/90ac267048.js" crossorigin="anonymous"></script>
 </head>
@@ -12,7 +12,8 @@
     <header>
         <nav>
             <div class="logo">
-                <h1>SevillaParty<i class="fas fa-star"></i></h1>
+                <img id="logo-terra" src="img/disco-logo.png" width="40px" height="40px" >
+                <h1>TERRA</h1>
             </div>
             <input type="checkbox" id="check">
             <label for="check" class="bar-btn">
@@ -21,18 +22,40 @@
             <ul class="nav-menu">
                <li ><a class="active" href="">Inicio</a></li>
                <li ><a href="Reserva/login.html">Reservar</a></li>
-               <li ><a href="">Sobre Nosotros</a></li>
                <li ><a href="Contacto/contacto.html">Contacto</a></li>
                <li ><a class="fas fa-user-circle" href="Registro/registro.html"></a></li>
+               <li ><a href="Galeria/galeria imagenes.html">Galeria de Imagenes</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="content">
+            <dialog>
+                <p>Lo siento ahora mismo no hay ofertas!</p>
+                <button id="close">Cerrar</button>
+            </dialog>
+                <button id="show">OFERTAS!</button>
+            <script>
+                var dialog = document.querySelector('dialog');
+                document.querySelector('#show').onclick = function() {
+                  dialog.show();
+                };
+                document.querySelector('#close').onclick = function() {
+                  dialog.close();
+                };
+            </script>
+                        <br><br>
+
             <h2>¿A qué esperas?</h2>
-            <h1>¡Disfruta de las mejores fiestas de Sevilla!</h1>
+            <h1><strong>¡Disfruta de las mejores fiestas de Sevilla!</strong></h1>
             <div class="body-btn">
                 <a href="" class="btn">Reserva ya</a>
+                <br><br><br>
+                <audio id="audio" controls>
+                    <source id="sonido" src="./img/soto-audio.webm" type="audio/webm">
+                        Tu navegador no soporta audio HTML5.
+                 </audio>
+                
             </div>
         </div>
     </main>
